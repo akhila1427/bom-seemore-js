@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button>see more</button>
+  <button>confirmation tab</button>
+<script>
+let a=document.getElementsByTagName("button")
+        a[0].addEventListener("click",()=>{
+           
+                window.history.back()
+            
+           
+        })
+// this is for window location to open the link in new tab
+
+
+
+let b=document.getElementsByTagName("button")
+b[0].addEventListener("click",()=>{
+let c=confirm("it is danger")
+if(c){
+  window.location.assign("https://fakestoreapi.com/")
+}
+})
+// for confirmation tab
+ </script>
+</body>
+</html>
